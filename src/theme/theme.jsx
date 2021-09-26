@@ -17,9 +17,14 @@ const theme = createTheme({
     MuiButton: {
       root: {
         backgroundColor: "#FF7033",
-        borderRadius: 5,
+        borderRadius: 4,
         width: 120,
-        height: 40
+        height: 40,
+        color: "#fff",
+        textTransform: "none",
+        "&:hover": {
+          backgroundColor: "#FF7033",
+        }
       }
     }
   }

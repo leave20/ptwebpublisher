@@ -1,4 +1,5 @@
 import { Box, makeStyles } from "@material-ui/core";
+import Home from "./components/Home";
 
 const useStyle = makeStyles(theme => ({
   root: {
@@ -9,8 +10,8 @@ const useStyle = makeStyles(theme => ({
 function App() {
   const classes = useStyle()
   return (
-    <Box bgcolor="background.default" className={classes.root}>
-      
+    <Box bgcolor="background.default" color="#fff" className={classes.root}>
+      <Home />
     </Box>
   );
 }

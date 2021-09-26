@@ -7,9 +7,10 @@ import {
   Link,
   Button,
   IconButton,
-  Drawer,
+  SwipeableDrawer,
 } from "@material-ui/core";
 import { FiMenu } from "react-icons/fi";
+import { RiArrowUpSLine } from "react-icons/ri"
 import { useState } from "react";
 
 const useStyle = makeStyles((theme) => ({
@@ -38,6 +39,15 @@ const useStyle = makeStyles((theme) => ({
   },
   menu: {
     color: "white",
+  },
+  drawer: {
+    borderRadius: "0 0 15px 15px",
+    height: "23vh",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "15px 0 0 0",
+    fontSize: "1.2rem",
+    fontWeight: "700",
   },
 }));
 
@@ -68,11 +78,19 @@ const NavBar = () => {
               <IconButton onClick={handleClikckOpen} className={classes.menu}>
                 <FiMenu />
               </IconButton>
-              <Drawer anchor={"top"} open={open} onClose={handleClikckOpen}>
+              <SwipeableDrawer
+                anchor={"top"}
+                open={open}
+                onClose={handleClikckOpen}
+                PaperProps={{ className: classes.drawer }}
+              >
                 <Link className={classes.centerButton}>Discovered</Link>
                 <Link className={classes.centerButton}>Bolg</Link>
                 <Link className={classes.centerButton}>Contact</Link>
-              </Drawer>
+                <IconButton onClick={handleClikckOpen}>
+                  <RiArrowUpSLine color="#fff" />
+                </IconButton>
+              </SwipeableDrawer>
             </>
           )}
         </Container>

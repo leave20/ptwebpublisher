@@ -2,6 +2,7 @@ import { Box, makeStyles } from "@material-ui/core";
 import Home from "./components/Home";
 import EPArea from "./components/ExplorePlaceArea";
 import WCOffer from "./components/WCanOffer";
+import AboutUs from "./components/AboutUs";
 
 const useStyle = makeStyles((theme) => ({
   root: {},
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <EPArea />
       <WCOffer />
+      <AboutUs />
     </Box>
   );
 }

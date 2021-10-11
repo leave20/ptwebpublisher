@@ -4,10 +4,13 @@ import test from "../assets/video/test.mp4";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    height: "100vh",
+    height: "125vh",
+    [theme.breakpoints.down("md")]: {
+      height: "100vh"
+    }
   },
   backBox: {
-    height: "70vh",
+    height: "80vh",
     width: "90vw",
     backgroundColor: "#353535",
     position: "absolute",

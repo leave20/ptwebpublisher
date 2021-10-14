@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import EPArea from "./components/ExplorePlaceArea";
 import WCOffer from "./components/WCanOffer";
 import AboutUs from "./components/AboutUs";
+import TopDestination from "./components/TopDestination";
 
 const useStyle = makeStyles((theme) => ({
   root: {},
@@ -16,6 +17,7 @@ function App() {
       <EPArea />
       <WCOffer />
       <AboutUs />
+      <TopDestination />
     </Box>
   );
 }

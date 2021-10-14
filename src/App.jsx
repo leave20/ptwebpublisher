@@ -5,6 +5,7 @@ import WCOffer from "./components/WCanOffer";
 import AboutUs from "./components/AboutUs";
 import TopDestination from "./components/TopDestination";
 import AwesomeBlog from "./components/AwesomeBlog";
+import Footer from "./components/Footer";
 
 const useStyle = makeStyles((theme) => ({
   root: {},
@@ -20,6 +21,7 @@ function App() {
       <AboutUs />
       <TopDestination />
       <AwesomeBlog />
+      <Footer />
     </Box>
   );
 }

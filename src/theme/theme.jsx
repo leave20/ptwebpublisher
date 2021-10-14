@@ -17,7 +17,7 @@ const theme = createTheme({
     MuiButton: {
       root: {
         backgroundColor: "#FF7033",
-        borderRadius: 4,
+        borderRadius: 2,
         width: 120,
         height: 40,
         color: "#fff",

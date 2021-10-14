@@ -13,6 +13,7 @@ const useStyle = makeStyles((theme) => ({
     flexDirection: "column",
     height: "90%",
     justifyContent: "center",
+    maxWidth: "1160px"
   },
   header: {
     fontWeight: 700,

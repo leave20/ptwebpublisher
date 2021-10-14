@@ -7,7 +7,13 @@ const useStyle = makeStyles((theme) => ({
     height: "125vh",
     [theme.breakpoints.down("md")]: {
       height: "100vh"
-    }
+    },
+    [theme.breakpoints.up(1920)]: {
+      height: "100vh"
+    },
+    [theme.breakpoints.up(2200)]: {
+      height: "125vh"
+    },
   },
   backBox: {
     height: "80vh",
@@ -20,7 +26,7 @@ const useStyle = makeStyles((theme) => ({
   headers: {
     display: "flex",
     justifyContent: "space-between",
-    margin: "80px 10vw",
+    margin: "80px 12vw",
     [theme.breakpoints.up(1660)]: {
       marginLeft: "20vw",
       marginRight: "10vw",
@@ -34,8 +40,8 @@ const useStyle = makeStyles((theme) => ({
     fontWeight: 700,
   },
   video: {
-    width: "70vw",
-    margin: "0px 10vw",
+    width: "67vw",
+    margin: "0px 12vw",
     [theme.breakpoints.up(1660)]: {
       marginLeft: "20vw",
       width: "60vw",

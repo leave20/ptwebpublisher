@@ -11,6 +11,7 @@ const useStyle = makeStyles((theme) => ({
   root: {
     width: "65vw",
     paddingBottom: "30px",
+    maxWidth: "1160px",
     [theme.breakpoints.down(1025)]: {
       width: "95vw",
     },

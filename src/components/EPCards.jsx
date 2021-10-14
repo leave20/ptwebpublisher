@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    width: 340,
+    width: 300,
     height: 470,
     backgroundSize: "cover",
     display: "flex",

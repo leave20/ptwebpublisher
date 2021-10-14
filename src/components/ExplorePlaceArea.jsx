@@ -34,6 +34,7 @@ const useStyle = makeStyles((theme) => ({
     paddingBottom: 40,
     height: "auto",
     overflowX: "hidden",
+    maxWidth: "1160px"
   },
   headerText: {
     fontWeight: 700,

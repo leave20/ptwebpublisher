@@ -22,6 +22,7 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    maxWidth: "1160px"
   },
   centerButton: {
     margin: "0px 30px",
